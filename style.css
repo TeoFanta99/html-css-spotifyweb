@@ -219,9 +219,70 @@ main {
 
 /* stili player */
 #player {
+    display: flex;
     height: 100px;
     width: 100%;
     z-index: 100;
-    /* debug */
-    background-color: grey;
+    background-color: #282828
+}
+
+.player-col {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#left-player {
+    width: 25%;
+    padding-left: 10px;
+    color: #878787;
+}
+
+#song-playing {
+    display: flex;
+}
+
+#song-playing img {
+    width: 15%;
+}
+
+#name-and-artist {
+    padding: 0 30px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#artist-name {
+    color: white;
+    font-weight: bold;
+}
+
+#left-player-icons {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    
+}
+
+#left-player-icons i {
+    margin-right: 15px;
+    padding: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#left-player-icons i:hover {
+    color: white;
+}
+
+#center-player {
+    width: 50%;
+    justify-content: center;
+}
+
+#right-player {
+    width: 25%;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
