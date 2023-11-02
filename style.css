@@ -18,7 +18,7 @@
 /***************************** main ****************************/
 main {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 115px);
     width: 100%;
     /* debug */
     background-color:lightcyan;
@@ -220,22 +220,22 @@ main {
 /* stili player */
 #player {
     display: flex;
-    height: 100px;
+    height: 115px;
     width: 100%;
     z-index: 100;
-    background-color: #282828
+    background-color: #282828;
+    color: white;
 }
 
 .player-col {
     display: flex;
-    align-items: center;
-    border: 1px solid black;
 }
 
 #left-player {
     width: 25%;
     padding-left: 10px;
     color: #878787;
+    align-items: center;
 }
 
 #song-playing {
@@ -254,8 +254,8 @@ main {
 }
 
 #artist-name {
-    color: white;
     font-weight: bold;
+    color: white;
 }
 
 #left-player-icons {
@@ -278,11 +278,60 @@ main {
 
 #center-player {
     width: 50%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+#center-player i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#center-player i:hover {
+    color: rgb(17, 169, 17);
+}
+
+#buttons-top {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-player-row {
+    width: 100%;
+    text-align: center;
+}
+
+#bottom-bar {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#bottom-bar > .volume {
+    width: 70%;
+}
+
+#bottom-bar span {
+    padding: 0 10px;
 }
 
 #right-player {
     width: 25%;
     justify-content: flex-end;
     padding-right: 10px;
+    align-items: center;
+}
+
+#right-player i {
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.volume {
+    background: red;
 }
