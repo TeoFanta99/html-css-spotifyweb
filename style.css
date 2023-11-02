@@ -98,6 +98,7 @@ main {
 /* stili main */
 #main-content {
     flex-grow: 1;
+    overflow-y: scroll;
     /* debug */
     background-color: yellow;
 }
@@ -109,7 +110,7 @@ main {
     align-items: center;
     /* debug */
     background-color: aqua;
-    min-height: 90px;
+    min-height: 70px;
     /* regole da inserire successivamente */
     /* opacity: 0.1; */
     /* position: fixed; */
@@ -125,7 +126,91 @@ main {
     margin-right: 3px;
 }
 
+#discover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* debug */
+    min-height: 50px;
+    background-color: rgb(189, 189, 253);
+}
 
+#discover ul {
+    list-style: none;
+}
+
+#discover li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#discover a {
+    text-decoration: none;
+}
+
+.customized-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    /* debug */
+    min-height: 200px;
+}
+
+#recently-played {
+    /* debug */
+    background-color: rgb(128, 128, 121);
+}
+
+#created-for-you {
+    /* debug */
+    background-color: rgb(156, 240, 219);
+}
+
+#popular-artists {
+    /* debug */
+    background-color: rgb(249, 144, 144);
+}
+
+
+.music-box {
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+.img-container {
+    width: 180px;
+    height: 180px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.round-img {
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.customized-row h2 {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+.customized-row h3 {
+    color: white;
+    font-size: 17px;
+}
+
+.customized-row span {
+    font-size: 14px;
+    width: 100%;
+}
 
 
 
