@@ -15,7 +15,7 @@
 }
 
 
-/* stili main */
+/***************************** main ****************************/
 main {
     display: flex;
     height: calc(100vh - 100px);
@@ -24,17 +24,111 @@ main {
     background-color:lightcyan;
 }
 
+
+/* stili left-bar */
+
 #left-bar {
     width: 250px;
+    color: #717171;
+    padding-left: 15px;
     /* debug */
     background-color: red;
 }
 
+#logo img {
+    width: 60%;
+    padding-top: 10px;
+}
+
+#buttons {
+    width: 100%;
+    padding-top: 10px;
+    /* debug */
+    background-color: green;
+}
+
+.btn-row {
+    width: 100%;
+    /* debug */
+    background-color: lightcyan;
+    min-height: 25px;
+    border: 1px solid black;
+}
+
+#playlist {
+    padding-top: 10px;
+    /* debug */
+    width: 100%;
+    background-color: orange;
+    min-height: 400px;
+}
+
+#playlist > span {
+    color: white;
+    font-weight: bold;
+}
+
+#create-new-playlist {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    /* debug */
+    min-height: 60px;
+    background-color: purple;
+}
+
+.name-playlist {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    /* debug */
+    min-height: 30px;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+/* stili main */
 #main-content {
-    width: calc(100vw - 250px);
+    flex-grow: 1;
     /* debug */
     background-color: yellow;
 }
+
+#upgrade-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* debug */
+    background-color: aqua;
+    min-height: 90px;
+    /* regole da inserire successivamente */
+    /* opacity: 0.1; */
+    /* position: fixed; */
+    /* top: 0; */
+}
+
+#upgrade-bar span {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: solid 2px white;
+    padding: 7px 30px;
+    border-radius: 50px;
+    margin-right: 3px;
+}
+
+
+
+
+
 
 
 
@@ -42,6 +136,7 @@ main {
 #player {
     height: 100px;
     width: 100%;
+    z-index: 100;
     /* debug */
     background-color: grey;
 }
