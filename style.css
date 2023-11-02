@@ -1,4 +1,4 @@
-/* stili generali della pagina */
+/* stili generali della pagina, desktop first */
 * {
     margin: 0;
     padding: 0;
@@ -14,3 +14,34 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+
+/* stili main */
+main {
+    display: flex;
+    height: calc(100vh - 100px);
+    width: 100%;
+    /* debug */
+    background-color:lightcyan;
+}
+
+#left-bar {
+    width: 250px;
+    /* debug */
+    background-color: red;
+}
+
+#main-content {
+    width: calc(100vw - 250px);
+    /* debug */
+    background-color: yellow;
+}
+
+
+
+/* stili player */
+#player {
+    height: 100px;
+    width: 100%;
+    /* debug */
+    background-color: grey;
+}
