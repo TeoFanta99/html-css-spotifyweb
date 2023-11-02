@@ -99,8 +99,6 @@ main {
 #main-content {
     flex-grow: 1;
     overflow-y: scroll;
-    /* debug */
-    background-color: yellow;
 }
 
 #upgrade-bar {
@@ -180,6 +178,7 @@ main {
     text-align: center;
     padding-top: 20px;
     margin-right: 20px;
+    max-width: 180px;
 }
 
 .img-container {
