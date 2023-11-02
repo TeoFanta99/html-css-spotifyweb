@@ -1,0 +1,16 @@
+/* stili generali della pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 15px;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
