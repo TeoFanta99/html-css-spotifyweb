@@ -32,15 +32,30 @@ main {
 /* stili left-bar */
 
 #left-bar {
-    width: 250px;
-    padding-left: 15px;
+    min-width: 250px;
     background-color: black;
+    padding-left: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#logo img {
+#main-left-bar-container {
+    height: calc(100% - 80px);
+    z-index: 50;
+}
+
+#logo-big {
     width: 60%;
     padding-top: 20px;
 }
+
+#logo-small {
+    display: none;
+}
+
+
 
 #buttons {
     width: 100%;
@@ -62,8 +77,6 @@ main {
 
 #playlist {
     padding-top: 20px;
-    /* debug */
-    min-height: 400px;
 }
 
 #playlist > span {
@@ -89,20 +102,48 @@ main {
     font-size: 18px;
 }
 
+#playlist-container {
+    /* min-height: calc(10vh - 115px); */
+    max-height: calc(100% - 80px);
+    overflow-y: scroll;
+    /* debeug */
+    /* background-color: azure; */
+}
+
 .name-playlist {
     display: flex;
     align-items: center;
     padding: 5px 0;
 }
 
+#bottom-left-nav {
+    height: 80px;
+    width: 80%;
+    margin-bottom: 10px;
+    /* debug */
+    /* background-color: aquamarine;
+    position: absolute;
+    bottom: 0; */
+}
+
 #download-app i {
     margin-right: 5px;
 }
 
+#user {
+    color: white;
+}
 
+#user i {
+    font-size: 30px;
+    padding-right: 10px;
+}
 
-
-
+#download-app, #user {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
 
 
 /* stili main */
@@ -138,12 +179,15 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 13px 0;
 }
 
 #discover ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #discover li {
@@ -159,22 +203,22 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     padding-top: 25px;
     padding-left: 15px;
     padding-bottom: 25px;
-
 }
 
 .music-box {
     text-align: center;
     padding-top: 20px;
     margin-right: 20px;
-    max-width: 180px;
+    max-width: 120px;
 }
 
 .img-container {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
 }
 
 .img-container img {
@@ -203,10 +247,6 @@ main {
 }
 
 
-
-
-
-
 /* stili player */
 #player {
     display: flex;
@@ -215,6 +255,8 @@ main {
     z-index: 100;
     background-color: #282828;
     color: white;
+    z-index: 99;
+    position: relative;
 }
 
 .player-col {

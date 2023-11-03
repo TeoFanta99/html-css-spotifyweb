@@ -1,7 +1,48 @@
 /* versioni per tablet */
+@media all and (max-width: 826px) {
+
+    #left-bar {
+        min-width: 200px;
+    }
+
+    .music-box {
+        max-width: 175px;
+    }
+    
+    .img-container {
+        width: 175px;
+        height: 175px;
+    }
+
+
+    #discover li {
+        padding-top: 10px;
+    }
+
+
+}
 
 
 
+@media all and (max-width: 700px) {
+
+    #left-bar {
+        min-width: 150px;
+    }
+
+    .music-box {
+        max-width: 210px;
+    }
+    
+    .img-container {
+        width: 210px;
+        height: 210px;
+    }
+
+
+
+
+}
 
 
 
@@ -11,3 +52,42 @@
 
 
 /* versione per smartphone */
+@media all and (max-width: 550px) {
+
+    #left-bar {
+        min-width: 50px;
+    }
+
+    #logo-big {
+        display: none;
+    }
+
+    #logo-small {
+        display: inline-block;
+        width: 70%;
+        padding-top: 10px;
+    }
+
+    #left-bar a, #playlist, #left-bar span, hr {
+        display: none;
+    }
+
+    #user i {
+        font-size: 20px;
+    }
+
+
+    .music-box {
+        max-width: 150px;
+    }
+    
+    .img-container {
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+
+
+}
