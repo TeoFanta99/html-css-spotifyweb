@@ -24,7 +24,7 @@ a {
 /***************************** main ****************************/
 main {
     display: flex;
-    height: calc(100vh - 115px);
+    height: calc(100vh - 100px);
     width: 100%;
 }
 
@@ -203,7 +203,6 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
     padding-top: 25px;
     padding-left: 15px;
     padding-bottom: 25px;
@@ -212,13 +211,8 @@ main {
 .music-box {
     text-align: center;
     padding-top: 20px;
-    margin-right: 20px;
-    max-width: 120px;
-}
-
-.img-container {
-    width: 120px;
-    height: 120px;
+    width: calc((100% / 6) - 20px);
+    margin: 0 10px;
 }
 
 .img-container img {
@@ -250,7 +244,7 @@ main {
 /* stili player */
 #player {
     display: flex;
-    height: 115px;
+    height: 100px;
     width: 100%;
     z-index: 100;
     background-color: #282828;
@@ -264,7 +258,7 @@ main {
 }
 
 #left-player {
-    width: 25%;
+    width: 30%;
     padding-left: 10px;
     color: #878787;
     align-items: center;
@@ -272,6 +266,7 @@ main {
 
 #song-playing {
     display: flex;
+    width: 100%;
 }
 
 #song-playing img {
@@ -279,10 +274,11 @@ main {
 }
 
 #name-and-artist {
-    padding: 0 30px 0 10px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 40%;
 }
 
 #artist-name {
@@ -294,7 +290,7 @@ main {
     display: flex;
     align-items: center;
     padding-left: 30px;
-    
+    width: 40%;
 }
 
 #left-player-icons i {
@@ -352,7 +348,7 @@ main {
 }
 
 #right-player {
-    width: 25%;
+    width: 20%;
     justify-content: flex-end;
     padding-right: 10px;
     align-items: center;

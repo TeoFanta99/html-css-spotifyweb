@@ -1,19 +1,17 @@
 /* versioni per tablet */
-@media all and (max-width: 826px) {
+@media all and (max-width: 1000px) {
 
     #left-bar {
         min-width: 200px;
     }
 
     .music-box {
-        max-width: 175px;
-    }
-    
-    .img-container {
-        width: 175px;
-        height: 175px;
+        width: calc((100% / 4) - 20px);
+        margin: 0 10px;
     }
 
+
+    
 
     #discover li {
         padding-top: 10px;
@@ -31,13 +29,24 @@
     }
 
     .music-box {
-        max-width: 210px;
+        width: calc((100% / 3) - 20px);
+        margin: 0 10px;
+    }
+
+    #name-and-artist {
+        font-size: 10px;
     }
     
-    .img-container {
-        width: 210px;
-        height: 210px;
+    #artist-name {
+        font-weight: bold;
+        color: white;
     }
+    
+    #left-player-icons i {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
 
 
 
@@ -76,15 +85,11 @@
         font-size: 20px;
     }
 
-
     .music-box {
-        max-width: 150px;
+        width: calc((100% / 2) - 20px);
+        margin: 0 10px;
     }
-    
-    .img-container {
-        width: 150px;
-        height: 150px;
-    }
+
 
 
 
