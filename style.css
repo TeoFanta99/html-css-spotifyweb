@@ -38,12 +38,6 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-#main-left-bar-container {
-    height: calc(100% - 80px);
-    z-index: 50;
 }
 
 #logo-big {
@@ -54,8 +48,6 @@ main {
 #logo-small {
     display: none;
 }
-
-
 
 #buttons {
     width: 100%;
@@ -77,6 +69,7 @@ main {
 
 #playlist {
     padding-top: 20px;
+    height: 100%;
 }
 
 #playlist > span {
@@ -103,11 +96,15 @@ main {
 }
 
 #playlist-container {
-    /* min-height: calc(10vh - 115px); */
-    max-height: calc(100% - 80px);
+    height: calc(100% - 75px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top-playlist {
     overflow-y: scroll;
-    /* debeug */
-    /* background-color: azure; */
+    height: calc(100% - 80px);
 }
 
 .name-playlist {
@@ -120,10 +117,6 @@ main {
     height: 80px;
     width: 80%;
     margin-bottom: 10px;
-    /* debug */
-    /* background-color: aquamarine;
-    position: absolute;
-    bottom: 0; */
 }
 
 #download-app i {
@@ -146,7 +139,7 @@ main {
 }
 
 
-/* stili main */
+/* stili main-content */
 #main-content {
     flex-grow: 1;
     overflow-y: scroll;
@@ -160,10 +153,9 @@ main {
     align-items: center;
     padding: 20px 0;
     background: rgba(0,0,0,0.3);
-    /* regole da inserire successivamente */
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    right : 0; */
+    right : 0;
 }
 
 #upgrade-bar span {
@@ -180,6 +172,7 @@ main {
     display: flex;
     justify-content: center;
     padding: 13px 0;
+    margin-top: 100px;
 }
 
 #discover ul {
