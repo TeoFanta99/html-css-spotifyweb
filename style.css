@@ -40,6 +40,11 @@ main {
     flex-direction: column;
 }
 
+#left-bar a:hover, #left-bar span:hover {
+    color: white;
+    cursor: pointer;
+}
+
 #logo-big {
     width: 60%;
     padding-top: 20px;
@@ -61,6 +66,10 @@ main {
 
 .btn-row i {
     font-size: 19px;
+}
+
+.btn-row:hover {
+    color: white;
 }
 
 .home-btn {
@@ -88,6 +97,10 @@ main {
     background-color: #A3A3A3;
     color: black;
     padding: 5px 7px;
+}
+
+#create-new-playlist:hover i {
+    background-color: white;
 }
 
 #create-new-playlist span {
@@ -121,6 +134,10 @@ main {
 
 #download-app i {
     margin-right: 5px;
+}
+
+#download-app:hover {
+    color: white;
 }
 
 #user {
@@ -165,7 +182,12 @@ main {
     border: solid 2px white;
     padding: 7px 30px;
     border-radius: 50px;
-    margin-right: 3px;
+    margin-right: 20px;
+}
+
+#upgrade-bar span:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 #discover {
@@ -315,6 +337,12 @@ main {
 #artist-name {
     font-weight: bold;
     color: white;
+    cursor: pointer;
+}
+
+#song-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #left-player-icons {
