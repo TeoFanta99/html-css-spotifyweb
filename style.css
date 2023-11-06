@@ -155,7 +155,8 @@ main {
     background: rgba(0,0,0,0.3);
     position: fixed;
     top: 0;
-    right : 0;
+    right: 0;
+    z-index: 10;
 }
 
 #upgrade-bar span {
@@ -188,8 +189,18 @@ main {
     padding: 0 10px;
 }
 
+#discover li:hover {
+    color: white;
+}
+
 #discover a {
     text-decoration: none;
+}
+
+.underlined hr {
+    width: 30%;
+    color: #B0FF2F;
+    margin: 0 auto;
 }
 
 .customized-row {
@@ -208,9 +219,36 @@ main {
     margin: 0 10px;
 }
 
+.img-container {
+    position: relative;
+    cursor: pointer;
+}
+
 .img-container img {
     width: 100%;
 }
+
+.img-container i {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: white;
+}
+
+.img-container:hover img {
+    opacity: calc(0.5);
+}
+
+.img-container:hover i {
+    display: inline;
+
+}
+
+
+
 
 .round-img {
     border-radius: 50%;
@@ -289,7 +327,7 @@ main {
 #left-player-icons i {
     margin-right: 15px;
     padding: 5px;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -306,7 +344,7 @@ main {
 
 #center-player i {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -315,7 +353,7 @@ main {
 }
 
 #buttons-top {
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -348,11 +386,13 @@ main {
 }
 
 #right-player i {
-    margin: 10px;
+    margin: 6px;
     color: white;
     cursor: pointer;
+    font-size: 11px;
 }
 
 .volume {
     background: red;
+    max-width: 40%;
 }
